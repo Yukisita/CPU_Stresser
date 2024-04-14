@@ -18,8 +18,12 @@ static DWORD WINAPI  StressProcess(LPVOID lpParam)
 
 int main()
 {
-	std::cout << ("CPUストレステストプログラム\n");
+	std::cout << ("CPUストレステストプログラム ver1.0.0\n");
 	std::cout << ("　　　　 2024/04/13 S.Yukisita\n\n");
+	std::cout << "**************************************************************************************" << std::endl ;
+	std::cout << "CPUに重負荷をかけるプログラムです。" << std::endl ;
+	std::cout << "本ソフトで生じた全ての損失（PCの故障など）について、作者は一切の責任を負いかねます。" << std::endl ;
+	std::cout << "**************************************************************************************" << std::endl << std::endl;
 
 	//諸々変数定義
 	char choice[100];
@@ -107,7 +111,7 @@ START:
 		{
 			int button1S = MessageBox(NULL,
 				TEXT("ストレステストを終了します"),
-				TEXT("CPU_StressTest"),
+				TEXT("CPU_Stresser"),
 				MB_OK | MB_ICONSTOP);
 		}
 		else
@@ -143,7 +147,7 @@ START:
 		{
 			int button1M = MessageBox(NULL,
 				TEXT("ストレステストを終了します"),
-				TEXT("CPU_StressTest"),
+				TEXT("CPU_Stresser"),
 				MB_OK | MB_ICONSTOP);
 		}
 		else
